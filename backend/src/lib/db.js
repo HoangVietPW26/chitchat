@@ -6,6 +6,7 @@ export const connectDB = async() => {
             // useNewUrlParser: true,
             // useUnifiedTopology: true,
             // useCreateIndex: true
+            dbName: "chitchat"
         });
         console.log(`MongoDB Connected: ${conn.connection.host}`);
     } catch (error) {
